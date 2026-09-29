@@ -1,6 +1,6 @@
 # edge
 
-Static assets for **[jvoltci.github.io/tools](https://jvoltci.github.io/tools)** — the
+Static assets for **[lognjais.github.io/tools](https://lognjais.github.io/tools)** — the
 Whisper speech-recognition weights and the ONNX Runtime wasm builds its Transcribe
 tool loads.
 
@@ -20,8 +20,8 @@ and the two obvious somewheres both fail:
 - **The tools repo itself** would carry 158 MB of binaries in its git history
   forever, on every clone, for an app that is otherwise a few hundred kilobytes.
 
-So: a second repo, published to Pages. `jvoltci.github.io/edge/` and
-`jvoltci.github.io/tools/` are the **same origin** — GitHub serves every project
+So: a second repo, published to Pages. `lognjais.github.io/edge/` and
+`lognjais.github.io/tools/` are the **same origin** — GitHub serves every project
 site of a user from one host — so there is no CORS boundary, no preflight, and
 no third party involved. The weights are one directory over from the app that
 loads them.
